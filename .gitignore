@@ -1,44 +1,315 @@
+.DS_Store
+#*********************
+# xcode 标准 ignore 项目
+#*********************
+
 # Xcode
 #
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
 
-## User settings
+## Build generated
+.idea/
+build/
+DerivedData/
+
+## Various settings
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
 xcuserdata/
+xcshareddata/
+
+## Other
+*.moved-aside
+*.xccheckout
+*.xcscmblueprint
 
 ## Obj-C/Swift specific
 *.hmap
-
-## App packaging
 *.ipa
 *.dSYM.zip
 *.dSYM
-
+*.generated.swift
 # CocoaPods
 #
 # We recommend against adding the Pods directory to your .gitignore. However
 # you should judge for yourself, the pros and cons are mentioned at:
 # https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
 #
-# Pods/
-#
-# Add this line if you want to avoid checking in source code from the Xcode workspace
-# *.xcworkspace
+
+
+# Pods 相关
+Pods/
+Pods/AFNetworking
+Pods/FXBlurView
+Pods/HLRichLabel
+Pods/Hawkeye
+Pods/JNKeychain
+Pods/KBar
+Pods/KSAVLogProtoModel
+Pods/KSAnimation
+Pods/KSClipKit
+Pods/KSListScrollView
+Pods/KSLocationKit
+Pods/KSMWDataCompress
+Pods/KSMWPassport
+Pods/KSMediaToolBox
+Pods/KSPMMagicFace
+Pods/KSPlatform
+Pods/KSRouter
+Pods/KSServiceHub
+Pods/KSTestin
+Pods/KSUHttpSntpClient
+Pods/KSUProtoModel
+Pods/KSUploader
+Pods/KSUploaderKit
+Pods/KwaiBase
+Pods/KwaiCaptcha
+Pods/KwaiIMKwaiLink
+Pods/KwaiOAuth
+Pods/KwaiSDK
+Pods/KwaiSwizzle
+Pods/KwikIconFont
+Pods/LYWReveal
+Pods/MJExtension
+Pods/MJRefresh
+Pods/MLeaksFinder
+Pods/MarqueeLabel
+Pods/NMRangeSlider
+Pods/Obiwan
+Pods/Objection
+Pods/PNChart
+Pods/Pigeon
+Pods/SDWebImage
+Pods/SSZipArchive
+Pods/Shapes
+Pods/THLabel
+Pods/TPKeyboardAvoiding
+Pods/TransitionKit
+Pods/Tweaks
+Pods/UICKeyChainStore
+Pods/UICountingLabel
+Pods/UITextView+Placeholder
+Pods/VisionEngine
+Pods/XFMulticastDelegate
+Pods/YYKit
+Pods/Zendesk*/
+Pods/eigen
+Pods/glm
+Pods/ktp
+Pods/lottie-ios
+Pods/matrix-wechat
+Pods/pop
+Pods/halide_ios
+Pods/iConsole
+Pods/SDWebImageWebPCoder
+Pods/SAMKeychain
+Pods/OHHTTPStubs
+Pods/M13OrderedDictionary
+Pods/LLVideoEditor
+Pods/LDNetDiagnoService
+Pods/KwaiIMSDK
+
+Pods/AppAuth
+Pods/Aspects
+Pods/AegonUI
+Pods/Aegon_iOS
+Pods/BlocksKit
+Pods/Bolts
+Pods/spine
+Pods/CGPUImage
+Pods/CocoaAsyncSocket
+Pods/CocoaHTTPServer
+Pods/CocoaLumberjack
+Pods/Daenerys
+Pods/FMDB
+Pods/Face3D
+Pods/Faceless
+Pods/FCFileManager
+Pods/FLAnimatedImage
+Pods/GPUImage
+Pods/GTMAppAuth
+Pods/GTMSessionFetcher
+Pods/Godzilla
+Pods/Godzippa
+Pods/Headers
+Pods/Hodor
+Pods/KLSF
+Pods/KSAudioProcessLib
+Pods/KSFFmpeg_iOS
+Pods/KSFastFolderSize
+Pods/KSKanas
+Pods/KSKanasProtoModel
+Pods/KSMWAzeroth
+Pods/KSORM
+Pods/KSProtobufCpp_iOS
+Pods/KSRSAUtil
+Pods/KSSecuring
+Pods/KSSecurityAIODebug
+Pods/KSSecurityAIORelease
+Pods/KSShareKit
+Pods/KSSmartDns
+Pods/KSVader
+Pods/KSVodPlayer
+Pods/KSXLog_iOS
+Pods/KSecurityWrapper
+Pods/KYEditorOCSDK
+Pods/KSCapeKit
+Pods/KwaiAccount
+Pods/KwaiMediaPlayer
+Pods/Local Podspecs/
+Pods/Masonry
+Pods/OpenApi
+Pods/OpenCV2
+Pods/OpenSSL-Universal
+Pods/Pods.xcodeproj
+Pods/Protobuf
+Pods/RapidJson
+Pods/Reachability
+Pods/Target\ Support\ Files/
+Pods/TwitterCore
+Pods/TwitterKit
+Pods/VPCFilter
+Pods/Westeros
+Pods/KSCameraKit
+Pods/Yoda
+Pods/boost
+Pods/cge
+Pods/faceless_plugin
+Pods/gorgeous
+Pods/hpimg
+Pods/libyuv
+Pods/mmulib
+Pods/tensorflow-lite
+Pods/yar_plugin
+Pods/ycnn2
+Pods/ycnn_plugin
+Pods/500w
+Pods/KSChinaUnicomSDK
+Pods/KSChinaMobileQuickLogin
+Pods/KSChinaTelecomSDK
+Pods/KSRtcKit
+Pods/KTPassport
+Pods/KWArya
+
+Pods/KWStannis_iOS
+Pods/libuv
+Pods/klp
+Pods/p2pstun
+
+Pods/YTAssetPicker
+Pods/Stentor
+Pods/ATUIKit
+Pods/AvoidCrash
+Pods/Bagel
+Pods/IJKMediaFramework
+Pods/DACircularProgress
+Pods/Diplomat
+Pods/FBRetainCycleDetector
+Pods/FHAnalysis
+Pods/FHApm
+Pods/FHPublish
+Pods/FHUtils
+Pods/FLEX
+Pods/IMSDKProto
+Pods/JRSwizzle
+Pods/JXCategoryView
+Pods/KSAudioRecognization
+Pods/KSCommon
+Pods/KSDiskCache
+Pods/KSJSBridge
+Pods/KSSDKShareKit
+Pods/KTDevice
+Pods/KwaiIMXFDB
+Pods/KwaiNetworking
+Pods/LookinServer
+Pods/Lyingwin-redux
+Pods/MBProgressHUD
+Pods/MWPhotoBrowser
+
+Pods/YARKit
+Pods/YTBaseAdditions
+Pods/YTCustomUI
+Pods/YYCache
+Pods/YYModel
+Pods/YYText
+Pods/aiedit
+Pods/aiedit_plugin
+Pods/flawfilter
+Pods/libwebp
+Pods/twitter-text
+Pods/OOMDetector
+Pods/RSKImageCropper
+Pods/ReactiveObjC
+Pods/SmileAPM
+Pods/TTTAttributedLabel
+Pods/MMKV
+Pods/MMKVCore
+Pods/Manifest.lock
+Pods/SnapKit
+Pods/Alamofire
+Pods/Moya
+Pods/Bugly
+Pods/Manifest.lock
+
+
+
+
+
+LocalPod.config
+!syn_model.py
+!syn_res.py
 
 # Carthage
 #
 # Add this line if you want to avoid checking in source code from Carthage dependencies.
 # Carthage/Checkouts
 
-Carthage/Build/
+Carthage/Build
 
 # fastlane
 #
-# It is recommended to not store the screenshots in the git repo.
-# Instead, use fastlane to re-generate the screenshots whenever they are needed.
+# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
+# screenshots whenever they are needed.
 # For more information about the recommended setup visit:
 # https://docs.fastlane.tools/best-practices/source-control/#source-control
 
 fastlane/report.xml
 fastlane/Preview.html
-fastlane/screenshots/**/*.png
+fastlane/screenshots
 fastlane/test_output
+
+# Code Injection
+#
+# After new code Injection tools there's a generated folder /iOSInjectionProject
+# https://github.com/johnno1962/injectionforxcode
+
+iOSInjectionProject/
+
+
+#**********************
+# 项目中单独的 ignore 内容
+#**********************
+
+#500w_ios/FMResource
+#!500w_ios/FMResource/ResourceListNew.json
+
+#500w_ios/FMMVResource
+#!500w_ios/FMMVResource/ResourceListNew.json
+#!500w_ios/FMMVResource/empty
+
+#500w_ios/FMusicResource
+#!500w_ios/FMusicResource/ResourceListNew.json
+
+
+#500W_resource
+.gundam
+.gundam/*
+Pods/*
+Podfile.lock
+Gemfile.lock
