@@ -30,14 +30,17 @@
 }
 
 - (void)changeAnchor {
-    UIView *originView = [self createViewWithFrame:self.view1.frame];
-    [self.view addSubview:originView];
-    originView.layer.borderWidth = 1.f;
-    
     NSLog(@"center = %@, origin = %@ position = %@", [NSValue valueWithCGPoint:self.view1.center], [NSValue valueWithCGRect:self.view1.frame], [NSValue valueWithCGPoint:self.view1.layer.position]);
     
-    self.view1.layer.anchorPoint = CGPointMake(1.f, 1.f);
+    self.view1.layer.anchorPoint = CGPointMake(0, 0);
+//    UIView *originView = [self createViewWithFrame:self.view1.frame];
+//    [self.view addSubview:originView];
+//    originView.layer.borderWidth = 1.f;
+//    
     NSLog(@"center = %@, origin = %@ position = %@", [NSValue valueWithCGPoint:self.view1.center], [NSValue valueWithCGRect:self.view1.frame], [NSValue valueWithCGPoint:self.view1.layer.position]);
+//    
+//    self.view1.layer.anchorPoint = CGPointMake(1.f, 1.f);
+//    NSLog(@"center = %@, origin = %@ position = %@", [NSValue valueWithCGPoint:self.view1.center], [NSValue valueWithCGRect:self.view1.frame], [NSValue valueWithCGPoint:self.view1.layer.position]);
 }
 
 - (void)transformView {

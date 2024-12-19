@@ -35,7 +35,7 @@ static void *teacherNameContext = &teacherNameContext;
     
     
     self.kvoStu = [[QTStudent alloc] initWithName:@"gtc"];
-    [self.kvoStu addObserver:self forKeyPath:@"xiaoming" options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld context:xiaomingNameContext]; //context和属性一一对应，这样就更简洁也更安全，也提高了判断的效率
+    [self.kvoStu addObserver:self forKeyPath:@"name" options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld context:xiaomingNameContext]; //context和属性一一对应，这样就更简洁也更安全，也提高了判断的效率
 }
 
 - (void)observeValueForKeyPath:(nullable NSString *)keyPath ofObject:(nullable id)object change:(nullable NSDictionary<NSKeyValueChangeKey, id> *)change context:(nullable void *)context {
@@ -51,6 +51,13 @@ static void *teacherNameContext = &teacherNameContext;
 
 - (void)test:(id)sender {
     self.kvoStu.xiaoming = @"dd";
+    NSString *cls = NSStringFromClass(self.kvoStu.class);
+    NSLog(cls);
+    // 获取派生的子类
+    NSLog(@"2 --- --- %@", object_getClass(self.kvoStu));
+    // 也可以通过kvc
+    NSLog([self.kvoStu valueForKey:@"isa"]);
+
 }
 
 - (void)dealloc {

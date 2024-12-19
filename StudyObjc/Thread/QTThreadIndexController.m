@@ -121,7 +121,8 @@ static void *teacherNameContext = &teacherNameContext;
 
 #pragma - Lock
 
-// 读写锁 1. 读写互斥， 2. 写写互斥 3. 读读不互斥
+// 读写锁 
+// 1. 读写互斥， 2. 写写互斥 3. 读读不互斥
 
 /*1、pthread_rwlock：
  pthread_rwlock经常用于文件等数据的读写操作，需要导入头文件#import <pthread.h>
@@ -210,7 +211,7 @@ static void *teacherNameContext = &teacherNameContext;
 
 - (void)writeFile {
     dispatch_barrier_async(self.conqueue, ^{
-        sleep(1);
+        sleep(0.2);
         NSLog(@"写文件 %@", [NSThread currentThread]);
     });
 }
