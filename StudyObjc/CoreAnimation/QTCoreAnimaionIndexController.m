@@ -30,9 +30,11 @@
     [self.dataDict setObject:@"QTBasicAnimationController" forKey:@"CABasicAnimation"];
     [self.dataDict setObject:@"QTRuntimeIndexController" forKey:@"CAKeyframeAnimation"];
     [self.dataDict setObject:@"QTAnchorPointController" forKey:@"锚点"];
+    [self.dataDict setObject:@"QTAffineTransformController" forKey:@"AffineTransform"];
     [self.dataDict setObject:@"QTFromController" forKey:@"转场Transition"];
     [self.dataDict setObject:@"QTPlayButtonController" forKey:@"Demo1"];
     [self.dataDict setObject:@"UIBasicAnimationDemoController" forKey:@"Demo2"];
+    
 }
 
 - (UIStatusBarStyle)preferredStatusBarStyle {

@@ -69,6 +69,7 @@
 		6CD5AC7B2A91AAD400C83D46 /* QTOperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD5AC7A2A91AAD400C83D46 /* QTOperationViewController.m */; };
 		6CE4DB9F24D82242007E185B /* QTBezierPathController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE4DB9E24D82242007E185B /* QTBezierPathController.m */; };
 		8F437F072B39DC66E0611E73 /* libPods-StudyObjc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 15A44365924FB77EA6E4400D /* libPods-StudyObjc.a */; };
+		940E39C22D68584000EC757F /* QTAffineTransformController.m in Sources */ = {isa = PBXBuildFile; fileRef = 940E39C12D68584000EC757F /* QTAffineTransformController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -180,6 +181,8 @@
 		6CE4DB9D24D82242007E185B /* QTBezierPathController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QTBezierPathController.h; sourceTree = "<group>"; };
 		6CE4DB9E24D82242007E185B /* QTBezierPathController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QTBezierPathController.m; sourceTree = "<group>"; };
 		7590B5765A67365800771A30 /* Pods-StudyObjc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyObjc.release.xcconfig"; path = "Target Support Files/Pods-StudyObjc/Pods-StudyObjc.release.xcconfig"; sourceTree = "<group>"; };
+		940E39C02D68584000EC757F /* QTAffineTransformController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QTAffineTransformController.h; sourceTree = "<group>"; };
+		940E39C12D68584000EC757F /* QTAffineTransformController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QTAffineTransformController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -284,6 +287,7 @@
 		6C33A04D248234D80003C323 /* CoreAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				940E39BF2D6855AF00EC757F /* AffineTransform */,
 				6C4D44C2250A2B7900537FEF /* AnchorPoint */,
 				6C4D44C1250A2B0C00537FEF /* Transition */,
 				6C68DEE624FF370200942420 /* Demo */,
@@ -563,6 +567,15 @@
 			path = AutoreleasePool;
 			sourceTree = "<group>";
 		};
+		940E39BF2D6855AF00EC757F /* AffineTransform */ = {
+			isa = PBXGroup;
+			children = (
+				940E39C02D68584000EC757F /* QTAffineTransformController.h */,
+				940E39C12D68584000EC757F /* QTAffineTransformController.m */,
+			);
+			path = AffineTransform;
+			sourceTree = "<group>";
+		};
 		F2F1EE59FD3EE0247FA28F2F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -673,6 +686,7 @@
 			files = (
 				6CE4DB9F24D82242007E185B /* QTBezierPathController.m in Sources */,
 				6C4D44B82509C9E400537FEF /* UIColor+Hex.m in Sources */,
+				940E39C22D68584000EC757F /* QTAffineTransformController.m in Sources */,
 				6C4D44CE250A38E200537FEF /* QTFromController.m in Sources */,
 				6C13B6432506216600EB8279 /* QTiQiYiPlayButton.m in Sources */,
 				6CD5AC782A90BBF900C83D46 /* QTAutoreleaseViewController.m in Sources */,
