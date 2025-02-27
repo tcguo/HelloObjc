@@ -36,15 +36,13 @@
 - (void)changeAnchor {
     NSLog(@"center = %@, frame = %@ position = %@", [NSValue valueWithCGPoint:self.view1.center], [NSValue valueWithCGRect:self.view1.frame], [NSValue valueWithCGPoint:self.view1.layer.position]);
     
-    self.view1.layer.anchorPoint = CGPointMake(0, 0);
-//    UIView *originView = [self createViewWithFrame:self.view1.frame];
-//    [self.view addSubview:originView];
-//    originView.layer.borderWidth = 1.f;
-//    
-    NSLog(@"center = %@, frame = %@ position = %@", [NSValue valueWithCGPoint:self.view1.center], [NSValue valueWithCGRect:self.view1.frame], [NSValue valueWithCGPoint:self.view1.layer.position]);
-//
-//    self.view1.layer.anchorPoint = CGPointMake(1.f, 1.f);
-//    NSLog(@"center = %@, origin = %@ position = %@", [NSValue valueWithCGPoint:self.view1.center], [NSValue valueWithCGRect:self.view1.frame], [NSValue valueWithCGPoint:self.view1.layer.position]);
+    NSLog(@"center = %@, origin = %@ position = %@", [NSValue valueWithCGPoint:self.view1.center], [NSValue valueWithCGRect:self.view1.frame], [NSValue valueWithCGPoint:self.view1.layer.position]);
+    
+    self.view1.layer.anchorPoint = CGPointMake(0.f, 0.f);
+    NSLog(@"center = %@, origin = %@ position = %@", [NSValue valueWithCGPoint:self.view1.center], [NSValue valueWithCGRect:self.view1.frame], [NSValue valueWithCGPoint:self.view1.layer.position]);
+    
+    // anchorPoint和position永远重合。position就是layer中的anchorPoint在superLayer中的位置坐标。
+    // 只是在不同坐标系，center等于position，即使锚点改变了，position的位置和数值不会变。
 }
 
 - (void)transformView {

@@ -62,6 +62,7 @@
 		6CB0C7B6267374E200295E4E /* QTVideoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB0C7B5267374E200295E4E /* QTVideoController.m */; };
 		6CCFEC1B27225BA100D7722D /* QTDownloadOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CCFEC1A27225BA100D7722D /* QTDownloadOperation.m */; };
 		6CCFEC1F2722C33B00D7722D /* UIBasicAnimationDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CCFEC1E2722C33B00D7722D /* UIBasicAnimationDemoController.m */; };
+		6CD3A3AF2D6CB75A007945C2 /* QTHitTestAndGestureController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD3A3AE2D6CB75A007945C2 /* QTHitTestAndGestureController.m */; };
 		6CD5AC6D2A90A0B500C83D46 /* NSWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD5AC6C2A90A0B500C83D46 /* NSWeakProxy.m */; };
 		6CD5AC702A90A90F00C83D46 /* QTStudent+KVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD5AC6F2A90A90F00C83D46 /* QTStudent+KVO.m */; };
 		6CD5AC742A90AE7900C83D46 /* QTKVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD5AC732A90AE7900C83D46 /* QTKVOViewController.m */; };
@@ -168,6 +169,8 @@
 		6CCFEC1A27225BA100D7722D /* QTDownloadOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QTDownloadOperation.m; sourceTree = "<group>"; };
 		6CCFEC1D2722C33B00D7722D /* UIBasicAnimationDemoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIBasicAnimationDemoController.h; sourceTree = "<group>"; };
 		6CCFEC1E2722C33B00D7722D /* UIBasicAnimationDemoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIBasicAnimationDemoController.m; sourceTree = "<group>"; };
+		6CD3A3AD2D6CB75A007945C2 /* QTHitTestAndGestureController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QTHitTestAndGestureController.h; sourceTree = "<group>"; };
+		6CD3A3AE2D6CB75A007945C2 /* QTHitTestAndGestureController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QTHitTestAndGestureController.m; sourceTree = "<group>"; };
 		6CD5AC6B2A90A0B500C83D46 /* NSWeakProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSWeakProxy.h; sourceTree = "<group>"; };
 		6CD5AC6C2A90A0B500C83D46 /* NSWeakProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSWeakProxy.m; sourceTree = "<group>"; };
 		6CD5AC6E2A90A90F00C83D46 /* QTStudent+KVO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QTStudent+KVO.h"; sourceTree = "<group>"; };
@@ -483,6 +486,8 @@
 			children = (
 				6C6F54BF26140DE200219D4F /* QTPanGestureController.h */,
 				6C6F54C026140DE200219D4F /* QTPanGestureController.m */,
+				6CD3A3AD2D6CB75A007945C2 /* QTHitTestAndGestureController.h */,
+				6CD3A3AE2D6CB75A007945C2 /* QTHitTestAndGestureController.m */,
 			);
 			path = Gesture;
 			sourceTree = "<group>";
@@ -725,6 +730,7 @@
 				6CCFEC1B27225BA100D7722D /* QTDownloadOperation.m in Sources */,
 				6C9593BA2A84D1FA00F3D022 /* QTStudent.m in Sources */,
 				6C33A075248238000003C323 /* QTBaseIndexViewController.m in Sources */,
+				6CD3A3AF2D6CB75A007945C2 /* QTHitTestAndGestureController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -25,6 +25,7 @@
     
     [self.dataDict setObject:@"QTCollectionViewController" forKey:@"Collection"];
     [self.dataDict setObject:@"QTPanGestureController" forKey:@"Pan"];
+    [self.dataDict setObject:@"QTHitTestAndGestureController" forKey:@"HitTest"];
 }
 
 @end
