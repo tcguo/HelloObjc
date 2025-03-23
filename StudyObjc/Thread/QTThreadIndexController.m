@@ -58,8 +58,8 @@ static void *teacherNameContext = &teacherNameContext;
     
     // 初始化读写锁
 //    self.safeArray = [NSMutableArray array];
-//    pthread_rwlock_init(&_rwlock, NULL);
-//    [self readWriteLock];
+    pthread_rwlock_init(&_rwlock, NULL);
+    [self readWriteLock];
     
     NSLog(@"alpha = %f", self.testView.alpha);
     self.timer = [NSTimer timerWithTimeInterval:1 block:^(NSTimer * _Nonnull timer) {
@@ -147,18 +147,6 @@ static void *teacherNameContext = &teacherNameContext;
  pthread_rwlock_destroy(&_lock);
  */
 
-- (void)testPthreadReadWriteLock{
-    dispatch_queue_t queue = dispatch_get_global_queue(0, 0);
-    for (int i = 0; i < 10; i++) {
-        dispatch_async(queue, ^{
-            [self read];
-        });
-        dispatch_async(queue, ^{
-//            [self write];
-        });
-    }
-}
-
 - (void)read {
     pthread_rwlock_rdlock(&_rwlock);
     NSLog(@"Read Thread = %@", [NSThread currentThread]);
@@ -180,7 +168,6 @@ static void *teacherNameContext = &teacherNameContext;
 - (void)readWriteLock {
     // 用dispatch_barriar_aync 对并行队列进行
     self.conqueue = dispatch_queue_create("com.com", DISPATCH_QUEUE_CONCURRENT);
-    self.conqueue2 = dispatch_queue_create("com.com.2", DISPATCH_QUEUE_CONCURRENT);
     
     for (int i = 0; i < 4; i++) {
         dispatch_async(self.conqueue, ^{
@@ -190,15 +177,6 @@ static void *teacherNameContext = &teacherNameContext;
                 [self read];
             }
         });
-        
-//        dispatch_async(dispatch_get_global_queue(0, 0), ^{
-//            [self writeFile];
-//            [self readFile];
-//        });
-//        dispatch_async(dispatch_get_global_queue(0, 0), ^{
-//            [self readFile];
-//            [self readFile];
-//        });
         
     }
 }

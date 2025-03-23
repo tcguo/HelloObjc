@@ -71,6 +71,9 @@
 		6CE4DB9F24D82242007E185B /* QTBezierPathController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE4DB9E24D82242007E185B /* QTBezierPathController.m */; };
 		8F437F072B39DC66E0611E73 /* libPods-StudyObjc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 15A44365924FB77EA6E4400D /* libPods-StudyObjc.a */; };
 		940E39C22D68584000EC757F /* QTAffineTransformController.m in Sources */ = {isa = PBXBuildFile; fileRef = 940E39C12D68584000EC757F /* QTAffineTransformController.m */; };
+		94B49FF52D7D2F140074908A /* QTMethodSwizzeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94B49FF42D7D2F140074908A /* QTMethodSwizzeController.m */; };
+		94B49FF82D7D2F500074908A /* NSObject+Swizze.m in Sources */ = {isa = PBXBuildFile; fileRef = 94B49FF72D7D2F500074908A /* NSObject+Swizze.m */; };
+		94B49FFB2D7D2F750074908A /* NSArray+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 94B49FFA2D7D2F750074908A /* NSArray+Safe.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -186,6 +189,12 @@
 		7590B5765A67365800771A30 /* Pods-StudyObjc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyObjc.release.xcconfig"; path = "Target Support Files/Pods-StudyObjc/Pods-StudyObjc.release.xcconfig"; sourceTree = "<group>"; };
 		940E39C02D68584000EC757F /* QTAffineTransformController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QTAffineTransformController.h; sourceTree = "<group>"; };
 		940E39C12D68584000EC757F /* QTAffineTransformController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QTAffineTransformController.m; sourceTree = "<group>"; };
+		94B49FF32D7D2F140074908A /* QTMethodSwizzeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QTMethodSwizzeController.h; sourceTree = "<group>"; };
+		94B49FF42D7D2F140074908A /* QTMethodSwizzeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QTMethodSwizzeController.m; sourceTree = "<group>"; };
+		94B49FF62D7D2F500074908A /* NSObject+Swizze.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Swizze.h"; sourceTree = "<group>"; };
+		94B49FF72D7D2F500074908A /* NSObject+Swizze.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Swizze.m"; sourceTree = "<group>"; };
+		94B49FF92D7D2F750074908A /* NSArray+Safe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+Safe.h"; sourceTree = "<group>"; };
+		94B49FFA2D7D2F750074908A /* NSArray+Safe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Safe.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -318,6 +327,12 @@
 			children = (
 				6C33A07F248243E00003C323 /* QTRuntimeIndexController.h */,
 				6C33A080248243E00003C323 /* QTRuntimeIndexController.m */,
+				94B49FF32D7D2F140074908A /* QTMethodSwizzeController.h */,
+				94B49FF42D7D2F140074908A /* QTMethodSwizzeController.m */,
+				94B49FF62D7D2F500074908A /* NSObject+Swizze.h */,
+				94B49FF72D7D2F500074908A /* NSObject+Swizze.m */,
+				94B49FF92D7D2F750074908A /* NSArray+Safe.h */,
+				94B49FFA2D7D2F750074908A /* NSArray+Safe.m */,
 			);
 			path = Runtime;
 			sourceTree = "<group>";
@@ -692,6 +707,7 @@
 				6CE4DB9F24D82242007E185B /* QTBezierPathController.m in Sources */,
 				6C4D44B82509C9E400537FEF /* UIColor+Hex.m in Sources */,
 				940E39C22D68584000EC757F /* QTAffineTransformController.m in Sources */,
+				94B49FF82D7D2F500074908A /* NSObject+Swizze.m in Sources */,
 				6C4D44CE250A38E200537FEF /* QTFromController.m in Sources */,
 				6C13B6432506216600EB8279 /* QTiQiYiPlayButton.m in Sources */,
 				6CD5AC782A90BBF900C83D46 /* QTAutoreleaseViewController.m in Sources */,
@@ -699,6 +715,7 @@
 				6C33A09824825C7C0003C323 /* QTBasicAnimationController.m in Sources */,
 				6C46C5FA2508DFED00A148CA /* QTCollectionViewController.m in Sources */,
 				6C4D44C5250A2B9700537FEF /* QTAnchorPointController.m in Sources */,
+				94B49FFB2D7D2F750074908A /* NSArray+Safe.m in Sources */,
 				6CCFEC1F2722C33B00D7722D /* UIBasicAnimationDemoController.m in Sources */,
 				6C33A08F2482447E0003C323 /* QTUIKitsIndexController.m in Sources */,
 				6C33A07E248243C60003C323 /* QTCoreAnimaionIndexController.m in Sources */,
@@ -731,6 +748,7 @@
 				6C9593BA2A84D1FA00F3D022 /* QTStudent.m in Sources */,
 				6C33A075248238000003C323 /* QTBaseIndexViewController.m in Sources */,
 				6CD3A3AF2D6CB75A007945C2 /* QTHitTestAndGestureController.m in Sources */,
+				94B49FF52D7D2F140074908A /* QTMethodSwizzeController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
