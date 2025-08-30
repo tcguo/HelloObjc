@@ -20,14 +20,13 @@ target 'StudyObjc' do
   pod 'YYKit'
   pod 'OpenCV2'
   pod 'HWPanModal', '~> 0.9.4'
-
-
-#  pod 'SDWebImage', '~> 5.0'
+  
+  pod 'QMUIKit'
+  pod 'SDWebImage', '~> 5.0'
+  
 #  pod 'SQLiteRepairKit'
 #
 #  pod 'WCDBOptimizedSQLCipher'
-#
 #  pod 'WCDB'
-  
 #  pod 'WCDBOptimizedSQLCipher', '1.2.1'
 end
