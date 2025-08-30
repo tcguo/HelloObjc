@@ -24,6 +24,11 @@ target 'StudyObjc' do
   pod 'QMUIKit'
   pod 'SDWebImage', '~> 5.0'
   
+  #组件化
+  pod "CTMediator"
+  #jsbridge
+  pod 'WebViewJavascriptBridge'
+  
 #  pod 'SQLiteRepairKit'
 #
 #  pod 'WCDBOptimizedSQLCipher'
